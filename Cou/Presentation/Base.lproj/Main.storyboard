@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2nI-oW-6mw" userLabel="ButtonsBackgroundView">
-                                <rect key="frame" x="0.0" y="582.66666666666663" width="402" height="291.33333333333337"/>
+                                <rect key="frame" x="0.0" y="583" width="402" height="291"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbZ-lf-br3">
                                         <rect key="frame" x="16" y="151.33333333333337" width="370" height="56"/>
@@ -72,7 +72,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8K-to-NZj" userLabel="CounterBackgroundView">
-                                <rect key="frame" x="0.0" y="0.0" width="402" height="582.66666666666663"/>
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="583"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счётчика:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOZ-9h-pwI" userLabel="CounterTitleLabel">
@@ -82,7 +82,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ7-hT-LX3" userLabel="CounterValueLabel">
-                                <rect key="frame" x="16" y="193" width="370" height="117.33333333333331"/>
+                                <rect key="frame" x="16" y="193" width="370" height="117"/>
                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="96"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
