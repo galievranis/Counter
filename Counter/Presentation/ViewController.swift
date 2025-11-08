@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         
         historyTextView.layer.cornerRadius = 24
         historyTextView.layer.masksToBounds = true
+        historyTextView.contentInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
         
         counterTitleLabel.text = counterTitleLabel.text?.uppercased()
     }
@@ -41,28 +42,35 @@ class ViewController: UIViewController {
     // MARK: Actions
     @IBAction func decreaseButtonDidTap(_ sender: Any) {
         if counter > 0 {
-            addToHistory(text: "\nDATE: значение изменено на -1")
+            addToHistory(text: "значение изменено на -1")
             counter -= 1
         } else {
-            addToHistory(text: "\nDATE: попытка уменьшить значение счётчика ниже 0")
+            addToHistory(text: "попытка уменьшить значение счётчика ниже 0")
         }
     }
     
     @IBAction func increaseButtonDidTap(_ sender: Any) {
-        addToHistory(text: "\nDATE: значение изменено на +1")
+        addToHistory(text: "значение изменено на +1")
         counter += 1
     }
     
     @IBAction func resetButtonDidTap(_ sender: Any) {
+        addToHistory(text: "значение сброшено")
         if counter > 0 {
-            addToHistory(text: "\nDATE: значение сброшено")
             counter = 0
         }
     }
     
     // MARK: Functions
     private func addToHistory(text: String) {
-        historyTextView.text.append(text)
+        historyTextView.text.append("\n\(Date().dateTimeString): " + text)
+        scrollToBottom(historyTextView)
+    }
+    
+    private func scrollToBottom(_ textView: UITextView) {
+        guard textView.text.count > 0 else { return }
+        let bottomRange = NSRange(location: textView.text.count - 1, length: 1)
+        textView.scrollRangeToVisible(bottomRange)
     }
 }
 
