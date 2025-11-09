@@ -6,30 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		881F657D2EBF75680010FA0A /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F657C2EBF75620010FA0A /* Date+Extensions.swift */; };
+		888B2B852EBF4A2500D84491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 888B2B7D2EBF4A2500D84491 /* Assets.xcassets */; };
+		888B2B872EBF4A2500D84491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888B2B7F2EBF4A2500D84491 /* LaunchScreen.storyboard */; };
+		888B2B882EBF4A2500D84491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888B2B802EBF4A2500D84491 /* Main.storyboard */; };
+		888B2B892EBF4A2500D84491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B2B7C2EBF4A2500D84491 /* AppDelegate.swift */; };
+		888B2B8A2EBF4A2500D84491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B2B812EBF4A2500D84491 /* SceneDelegate.swift */; };
+		888B2B8B2EBF4A2500D84491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B2B822EBF4A2500D84491 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		8858839A2EBF49B300397A83 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		881F657B2EBF75170010FA0A /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Counter.app; path = "/Users/ranisgaliev/Dev/iOS Developer/Projects/Counter/build/Debug-iphoneos/Counter.app"; sourceTree = "<absolute>"; };
+		881F657C2EBF75620010FA0A /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		888B2B7C2EBF4A2500D84491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		888B2B7D2EBF4A2500D84491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		888B2B7E2EBF4A2500D84491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		888B2B812EBF4A2500D84491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		888B2B822EBF4A2500D84491 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		888B2B832EBF4A2500D84491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		888B2B842EBF4A2500D84491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		885883AC2EBF49B400397A83 /* Exceptions for "Counter" folder in "Counter" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 885883992EBF49B300397A83 /* Counter */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		8858839C2EBF49B300397A83 /* Counter */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				885883AC2EBF49B400397A83 /* Exceptions for "Counter" folder in "Counter" target */,
-			);
-			path = Counter;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		885883972EBF49B300397A83 /* Frameworks */ = {
@@ -45,17 +42,47 @@
 		885883912EBF49B300397A83 = {
 			isa = PBXGroup;
 			children = (
-				8858839C2EBF49B300397A83 /* Counter */,
-				8858839B2EBF49B300397A83 /* Products */,
+				888B2B932EBF74A000D84491 /* Counter */,
 			);
 			sourceTree = "<group>";
 		};
-		8858839B2EBF49B300397A83 /* Products */ = {
+		888B2B932EBF74A000D84491 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
-				8858839A2EBF49B300397A83 /* Counter.app */,
+				888B2B962EBF74BF00D84491 /* Helpers */,
+				888B2B952EBF74B600D84491 /* Resources */,
+				888B2B942EBF74B000D84491 /* Presentation */,
+				888B2B7C2EBF4A2500D84491 /* AppDelegate.swift */,
+				888B2B812EBF4A2500D84491 /* SceneDelegate.swift */,
 			);
-			name = Products;
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		888B2B942EBF74B000D84491 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				888B2B802EBF4A2500D84491 /* Main.storyboard */,
+				888B2B822EBF4A2500D84491 /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		888B2B952EBF74B600D84491 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				888B2B7D2EBF4A2500D84491 /* Assets.xcassets */,
+				888B2B7E2EBF4A2500D84491 /* Info.plist */,
+				888B2B7F2EBF4A2500D84491 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		888B2B962EBF74BF00D84491 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				881F657C2EBF75620010FA0A /* Date+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,14 +100,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				8858839C2EBF49B300397A83 /* Counter */,
-			);
 			name = Counter;
 			packageProductDependencies = (
 			);
 			productName = Counter;
-			productReference = 8858839A2EBF49B300397A83 /* Counter.app */;
+			productReference = 881F657B2EBF75170010FA0A /* Counter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +132,7 @@
 			mainGroup = 885883912EBF49B300397A83;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 8858839B2EBF49B300397A83 /* Products */;
+			productRefGroup = 885883912EBF49B300397A83;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -122,6 +146,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888B2B852EBF4A2500D84491 /* Assets.xcassets in Resources */,
+				888B2B872EBF4A2500D84491 /* LaunchScreen.storyboard in Resources */,
+				888B2B882EBF4A2500D84491 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +159,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888B2B892EBF4A2500D84491 /* AppDelegate.swift in Sources */,
+				881F657D2EBF75680010FA0A /* Date+Extensions.swift in Sources */,
+				888B2B8A2EBF4A2500D84491 /* SceneDelegate.swift in Sources */,
+				888B2B8B2EBF4A2500D84491 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		888B2B7F2EBF4A2500D84491 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				888B2B832EBF4A2500D84491 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		888B2B802EBF4A2500D84491 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				888B2B842EBF4A2500D84491 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		885883AE2EBF49B400397A83 /* Debug */ = {
@@ -147,7 +197,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z6T6M4XZ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Counter/Info.plist;
+				INFOPLIST_FILE = Counter/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -179,7 +229,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z6T6M4XZ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Counter/Info.plist;
+				INFOPLIST_FILE = Counter/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
