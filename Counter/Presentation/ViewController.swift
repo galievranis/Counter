@@ -7,16 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     // MARK: Outlets
-    @IBOutlet weak var counterLabel: UILabel!
-    @IBOutlet weak var historyTextView: UITextView!
-    @IBOutlet weak var decreaseButton: UIButton!
-    @IBOutlet weak var increaseButton: UIButton!
-    @IBOutlet weak var resetButton: UIButton!
-    @IBOutlet weak var counterTitleLabel: UILabel!
-    @IBOutlet weak var counterBackgroundView: UIView!
+    @IBOutlet private weak var counterLabel: UILabel!
+    @IBOutlet private weak var historyTextView: UITextView!
+    @IBOutlet private weak var decreaseButton: UIButton!
+    @IBOutlet private weak var increaseButton: UIButton!
+    @IBOutlet private weak var resetButton: UIButton!
+    @IBOutlet private weak var counterTitleLabel: UILabel!
+    @IBOutlet private weak var counterBackgroundView: UIView!
     
     // MARK: Variables
     private var counter = 0 {
@@ -31,16 +31,14 @@ class ViewController: UIViewController {
         
         // Стилистические настройки
         counterBackgroundView.layer.cornerRadius = 32
-        
         historyTextView.layer.cornerRadius = 24
         historyTextView.layer.masksToBounds = true
         historyTextView.contentInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
-        
         counterTitleLabel.text = counterTitleLabel.text?.uppercased()
     }
     
     // MARK: Actions
-    @IBAction func decreaseButtonDidTap(_ sender: Any) {
+    @IBAction private func decreaseButtonDidTap(_ sender: Any) {
         if counter > 0 {
             addToHistory(text: "значение изменено на -1")
             counter -= 1
@@ -49,12 +47,12 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func increaseButtonDidTap(_ sender: Any) {
+    @IBAction private func increaseButtonDidTap(_ sender: Any) {
         addToHistory(text: "значение изменено на +1")
         counter += 1
     }
     
-    @IBAction func resetButtonDidTap(_ sender: Any) {
+    @IBAction private func resetButtonDidTap(_ sender: Any) {
         addToHistory(text: "значение сброшено")
         if counter > 0 {
             counter = 0
